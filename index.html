@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagesCazuelas/smallLogo.png" type="image/x-icon">
+
     <title>Tostadas las Cazuelas</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -156,7 +158,7 @@
     </div>
 
 
-    <form class="contactForm" id="contactanosForma" action="" method="post">
+    <!-- <form class="contactForm" id="contactanosForma" action="" method="post">
         <h3>¿ERES ABARROTERO O TIENES UNA TIENDA? CONTÁCTANOS Y OFRECE NUESTROS PRODUCTOS A TUS CLIENTES</h3>
         <div class="form-group">
             <label for="nombre">Nombre:</label>
@@ -180,6 +182,21 @@
             <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
         </div>
         <button type="submit">Enviar</button>
+    </form> -->
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="e05b8392-1043-4648-9c09-eb0a62f7eb8f">
+        <label for="name">name</label>
+        <input type="text" name="name" required>
+        <label for="email">email</label>
+
+        <input type="email" name="email" required>
+        <input type="hidden" name="subject" value="New pwrsonal from Web3Forms">
+        <textarea name="message" required></textarea>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <button type="submit">Submit Form</button>
+    
     </form>
 
     

@@ -626,6 +626,15 @@ overflow-x:hidden
 }
 
 
+    form {
+        text-align: center;
+        margin: 5rem 2rem;
+        padding: 2rem 2rem;
+        border-top: solid 1px #d75351;
+    }
+
+
+    
     .contactForm {
         text-align: center;
         margin: 5rem 2rem;
