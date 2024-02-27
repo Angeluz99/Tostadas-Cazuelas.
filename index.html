@@ -187,13 +187,26 @@
     <form action="https://api.web3forms.com/submit" method="POST">
 
         <input type="hidden" name="access_key" value="e05b8392-1043-4648-9c09-eb0a62f7eb8f">
-        <label for="name">name</label>
-        <input type="text" name="name" required>
-        <label for="email">email</label>
 
+        <label for="name">Nombre</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email</label>
         <input type="email" name="email" required>
-        <input type="hidden" name="subject" value="New pwrsonal from Web3Forms">
+
+        <label for="producto">Producto de Interés:</label>
+        <select name="subject">
+            <option value="tostadas">Tostadas</option>
+            <option value="chiles">Chiles o secos</option>
+            <option value="tortillas">Tortillas de harina</option>
+            <option value="totopos">Totopos</option>
+            <option value="totopos">Me interesan todos</option>
+
+        </select>        
+
+        <label for="message">¿Cómo podemos ayudarte?:</label>
         <textarea name="message" required></textarea>
+
         <input type="hidden" name="redirect" value="https://web3forms.com/success">
         <button type="submit">Submit Form</button>
     
