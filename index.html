@@ -103,31 +103,33 @@
         <div class="productSection">
             <img src="imagesCazuelas/tradicional.png" alt="tradicional">
 
-            <h4>Tradicional</h4>
+            <h4>TRADICIONAL</h4>
             <p>Elaborado a partir de tortillas de maíz frita de manera tradicional, suave y crujientes. Ideal para acompañar el pozole o cualquier platillo tradicional mexicano.</p>
         </div>
 
         <div class="productSection">
             <img src="imagesCazuelas/deshidratada.png" alt="deshidratada">
 
-            <h4>Deshidratada</h4>
+            <h4>DESHIDRATADA</h4>
             <p>Elaboradas con masa de maíz, deshidratadas, un producto que puedes acompañar con diversas recetas de comida mexicana. Sin colesterol.</p>
         </div>
 
         <div class="productSection">
             <img src="imagesCazuelas/cevichera.png" alt="cevichera">
 
-            <h4>Cevichera</h4>
+            <h4>CEVICHERA</h4>
             <p>Tostada ideal para mariscos ya que no se aguada por la humedad de la comida. disfrutando por más tiempo tus alimentos. A pesar de la resistencia es suave al masticar.</p>
+        </div>
+
+        <div class="productSection">
+            <img src="imagesCazuelas/tortillasHarina.png" alt="tortillasHarina">
+
+            <h4>TORTILLAS DE HARINA</h4>
+            <p>Totrtillas de textura ligera, perfectamente dorada en el exterior y tierna en el interior. Con un sabor delicado a maíz y trigo, son versátiles para enrollar rellenos sabrosos o disfrutar sola.</p>
         </div>
     </div>
 
-        <div class="productSection content">
-            <img src="imagesCazuelas/tortillasHarina.png" alt="tortillasHarina">
 
-            <h4>Tortillas de Harina</h4>
-            <p>Totrtillas de textura ligera, perfectamente dorada en el exterior y tierna en el interior. Con un sabor delicado a maíz y trigo, son versátiles para enrollar rellenos sabrosos o disfrutar sola.</p>
-        </div>
 
     <div class="totoposSection" >
         <video class="videoProducts" autoplay muted loop>
@@ -135,9 +137,11 @@
             Your browser does not support the video tag.
 
         </video>
-        <h1>Totopos</h1>
+        <h1>LAS DELICIAS DEL MAÍZ</h1>
 
         <section class="productSection">
+            <h4>TOTOPOS</h4>
+
             <img src="imagesCazuelas/totopos.png" alt="totopos">
             <p>Transforma tus platillos en deliciosas opciones mexicanas, para unos deliciosos chilaquiles o para botanear, es fácil, rápido. Elaborados con masa de maíz.</p>
         </section>
@@ -158,49 +162,27 @@
     </div>
 
 
-    <!-- <form class="contactForm" id="contactanosForma" action="" method="post">
+
+
+    <form class="contactForm" action="https://api.web3forms.com/submit" method="POST">
         <h3>¿ERES ABARROTERO O TIENES UNA TIENDA? CONTÁCTANOS Y OFRECE NUESTROS PRODUCTOS A TUS CLIENTES</h3>
-        <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="producto">Producto de Interés:</label>
-            <select id="producto" name="producto">
-                <option value="tostadas">Tostadas</option>
-                <option value="chiles">Chiles o secos</option>
-                <option value="tortillas">Tortillas de harina</option>
-                <option value="totopos">Totopos</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        </div>
-        <button type="submit">Enviar</button>
-    </form> -->
 
-    <form action="https://api.web3forms.com/submit" method="POST">
 
-        <input type="hidden" name="access_key" value="e05b8392-1043-4648-9c09-eb0a62f7eb8f"> 
-        <!-- token for contacto@tostadaslascazuelas.com 9e3b6bfe-dff4-4662-9f29-880407b00a97-->
+        <input type="hidden" name="access_key" value="9e3b6bfe-dff4-4662-9f29-880407b00a97"> 
+        <!-- token for contacto@tostadaslascazuelas.com 9e3b6bfe-dff4-4662-9f29-880407b00a97 -->
         <!-- token for angelgldiaz e05b8392-1043-4648-9c09-eb0a62f7eb8f -->
 
 
-        <label for="name">Nombre</label>
+        <label >Nombre</label>
         <input type="text" name="name" required>
 
-        <label for="email">Email</label>
+        <label >Email</label>
         <input type="email" name="email" required>
 
-        <label for="phone">Teléfono</label>
+        <label>Teléfono</label>
         <input type="number" name="phone" required>
 
-        <label for="producto">Producto de Interés:</label>
+        <label>Producto de Interés:</label>
         <select name="subject">
             <option value="Mensaje desde tostadaslascazuelas.com. Quieren saber sobre Tostadas">Tostadas</option>
             <option value="Mensaje desde tostadaslascazuelas.com. Quieren saber sobre Chiles">Chiles o secos</option>
@@ -211,10 +193,10 @@
         </select>        
         <!-- Incorrect use of <label for=FORM_ELEMENT> -->
             <!-- The label's for attribute doesn't match any element id. This might prevent the browser from correctly autofilling the form and accessibility tools from working correctly. -->
-        <label for="message">¿Cómo podemos ayudarte?:</label>
+        <label>¿Cómo podemos ayudarte?:</label>
         <textarea name="message" required></textarea>
 
-        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <input type="hidden" name="redirect" value="https://web3forms.com/success?title=Mensaje%20Enviado&desc=Presiona%20'Go%20back'%20para%20volver%20a%20Tostadas%20las%20Cazuelas" >
         <button type="submit">Enviar</button>
     
     </form>
@@ -227,6 +209,7 @@
         <p>Hidalgo 58 D Atequiza centro estación </p>
         <h2>Contáctanos</h2>
         <p> Whatsapp 33 17 23 75 67</p>
+        <h3>Powered by Angel Diaz</h3>
     </footer>
 
 </body>

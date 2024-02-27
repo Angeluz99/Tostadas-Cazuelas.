@@ -611,8 +611,9 @@ overflow-x:hidden
     color: white;
     position: absolute;
     z-index: 200;
+    font-size: 6vw;
     /* border: solid; */
-    transform: translate( 35vw,  -35vw);
+    transform: translate( 13vw,  -35vw);
    }
 
    .totoposSection img{
@@ -637,18 +638,14 @@ overflow-x:hidden
     
     .contactForm {
         text-align: center;
-        margin: 5rem 2rem;
-        padding: 2rem 2rem;
+        margin: 5vw 8vw;
+        padding: 2vw 2vw;
         border-top: solid 1px #d75351;
-    }
-    
-    .form-group {
-        margin-bottom: 20px;
     }
     
     label {
         display: block;
-        margin-bottom: 5px;
+        margin-top: 3vw;
         font-weight: 400;
     }
     
@@ -658,7 +655,7 @@ overflow-x:hidden
     textarea {
         width: 100%;
         padding: 10px;
-        border: 1px solid #ccc;
+        border: 2px solid #ccc;
         border-radius: 5px;
     }
     
@@ -668,6 +665,8 @@ overflow-x:hidden
     
     button[type="submit"] {
         padding: 10px 20px;
+        margin-top: 3vw;
+
         background-color: #d75351;
         color: #fff;
         border: none;
@@ -721,12 +720,15 @@ overflow-x:hidden
         font-size: 3vw;
     }
 
+
+
     .topHeadProducts{
         height: 25vw;
         
     }
     .allProductsHead {
        max-height: 90vw;
+       margin-bottom: 0;
     }
     .subHeadProducts h4{
         font-size: 3vw;
@@ -742,19 +744,21 @@ overflow-x:hidden
     .tostadasProductWrapper{
         display: flex; /* Use flexbox to align items in a row */
         justify-content: space-around;
+        align-items: baseline;
     }
     .productSection{
 
-        padding: 4vw .5vw;
-        margin: 2vw 1vw;
+        padding: 2vw .5vw;
+        margin: 8vw 1vw;
     }
     
     .tostadasProductWrapper img{
-        width: 100%;
+        width: 20vw;
+        height: auto;
         /* border: solid; */
     }
 
-    .allProductsSection p, .allProductsSection h4,.content{
+     .allProductsSection h4,.content{
         font-size:3vw;
 
     }
@@ -762,7 +766,7 @@ overflow-x:hidden
     .totoposSection h1{
         font-size: 5vw;
   
-        transform: translate( 40vw,  -35vw);
+        transform: translate( 20vw,  -35vw);
        }
 
 
@@ -915,10 +919,12 @@ overflow-x:hidden
 
     }
 
-    .totoposSection .productSection{
-        margin-top: -5vw;
+    .totoposSection {
+        margin-top: -10vw;
     }
- 
+    .totoposSection p{
+        padding-inline: 10vw ;
+    }
 
 
 }
