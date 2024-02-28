@@ -30,7 +30,29 @@ overflow-x:hidden
         align-items: center;
         justify-content: space-around;
         background-color: rgba(0, 0, 0, 0.523);
+        animation: highlight auto linear;
+        animation-timeline: scroll(root);
     }
+
+    @keyframes highlight{
+        10% {
+      background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 19%, rgba(0, 0, 0, 0.558) 35%, rgba(0, 0, 0, 0.837) 43%);
+        }
+        20% {
+          background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 45%,  rgba(0, 0, 0, 0.558) 58%, rgba(0, 0, 0, 0.855) 69%);
+        }
+        88%{
+            background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 45%,  rgba(0, 0, 0, 0.558) 58%, rgba(0, 0, 0, 0.855) 69%);
+        }
+        89%{
+          background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 74%,  rgba(0, 0, 0, 0.558) 88%, rgba(0, 0, 0, 0.855) 95%);
+        }
+        100%{
+          background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 74%,  rgba(0, 0, 0, 0.558) 88%, rgba(0, 0, 0, 0.855) 95%);
+      
+        }
+      
+      }
 
     .navBar img{
         height: 50px;
@@ -93,11 +115,19 @@ overflow-x:hidden
         /* background-image: url('imagesCazuelas/backg1.png'); */
         background-position: center;
         color: white;
+        margin-bottom: 9vw;
         /* filter: contrast(80%); */
         /* filter: brightness(70%) */
 
 
 
+    }
+
+    .divisor{
+        background-color: white;
+        width: 100%;
+        color: white;
+        font-size: 5vw ;
     }
 
     #aboutSection{
@@ -165,13 +195,24 @@ overflow-x:hidden
     }
 
     .topHeadProducts{
+
+
         background-image: url(imagesCazuelas/imageProductsHead.jpg) ;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         color: white;
-    }
+        margin-bottom: 9vw;
 
+
+    }
+    .topHeadProducts h2, .topHeadProducts p{
+        background-color: rgba(0, 0, 0, 0.578);
+        display: inline-flex;
+
+        
+
+    }
 
     .allProductsHead {
         color: rgb(0, 0, 0);
@@ -213,7 +254,7 @@ overflow-x:hidden
         white-space: nowrap; /* Prevent line breaks */
         display: flex; 
         justify-content: space-between;
-        overflow-x: auto;
+        overflow-x: hidden;
         /* border: solid; */
         color: black;
         font-family: Allura;
@@ -292,7 +333,7 @@ overflow-x:hidden
     }
 
     100%{
-        transform: translateX(20vw);
+        transform: translateX(0vw);
 
     }
 }
@@ -362,7 +403,7 @@ overflow-x:hidden
 
         }   
         65%{
-            transform: translateX(-1vw);
+            transform: translateX(-5vw);
             opacity: 1;
         }
         95%{
@@ -383,7 +424,7 @@ overflow-x:hidden
         white-space: nowrap; /* Prevent line breaks */
         display: flex; 
         justify-content: space-between;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 
     .animHeadProducts span::-webkit-scrollbar {
@@ -428,13 +469,13 @@ overflow-x:hidden
             transform: translateX(-200vw);
     
         }
-        95%{
+        97%{
             transform: translateX(-200vw);
     
         }
     
         100%{
-            transform: translateX(20vw);
+            transform: translateX(0vw);
     
         }
     }
@@ -620,6 +661,10 @@ overflow-x:hidden
     filter: saturate(1.2);
    }
 
+   .totoposSection .productSection{
+    margin-top: 0;
+   }
+
 
 .productSection img{
     height: 50vw;
@@ -685,6 +730,25 @@ overflow-x:hidden
         text-align: center;
     }
 
+    footer h4{
+        text-decoration: none;
+        font-size: 5vw;
+        color: white;
+        /* text-decoration: underline; */
+    }
+
+    footer a{
+        margin-top: 10vw;
+        text-decoration: none;
+        color: black;       
+
+    }
+
+    /* hover animations */
+    .navBar a:hover{
+        scale: 1.1;
+        filter: drop-shadow(2px 2px 3px white);
+    }
 
 
 
@@ -842,7 +906,7 @@ overflow-x:hidden
             }
         
             100%{
-                transform: translateX(20vw);
+                transform: translateX(0vw);
         
             }
         }
@@ -913,14 +977,14 @@ overflow-x:hidden
         }
     
         100%{
-            transform: translateX(20vw);
+            transform: translateX(0vw);
     
         }
 
     }
 
     .totoposSection {
-        margin-top: -10vw;
+        margin-top: 0vw;
     }
     .totoposSection p{
         padding-inline: 10vw ;
