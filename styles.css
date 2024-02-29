@@ -256,17 +256,14 @@ overflow-x:hidden
         justify-content: space-between;
         overflow-x: hidden;
         border: solid red;
-        color: black;
         font-family: Allura;
         font-size: 7vw;
     }
-
-  
-
     .subHeadTitles h1 {
         border: solid;
         margin: 0 15vw; 
         position: relative;
+        padding: 0;
 
     }
 
@@ -279,25 +276,24 @@ overflow-x:hidden
         width: 60vw;
         }
     
-    .tostadasAnim{
-        
+    .tostadasAnim{ 
         width: 100%; /* Set width to 100% to make it as wide as its container */
         white-space: nowrap; /* Prevent line breaks */
         display: flex; 
         justify-content: space-between;
         overflow-x: hidden;
     }
-    
-
-    
     .animHeadProducts .tostadasAnim img{
         position: relative;
-    
         z-index: 10;
         margin: 0 20vw;
         padding: 0;
     }
-    
+    .faceBar{
+        max-height: 10vw;
+        background-color: #0056b3;
+        z-index: 5;
+    }
     
     .mantel{
         /* position: relative; */
@@ -312,8 +308,64 @@ overflow-x:hidden
     
 
     .scrollAnim{
-        animation: scroll 8s infinite;
-        /* animation-direction:initial; */
+        animation: scroll 8s infinite ease-in-out;
+        -webkit-animation: scroll 8s infinite; /* Safari 4.0 - 8.0 */
+    }
+
+    @keyframes scroll {
+        0%{
+            transform: translateX(0vw);
+    
+        }
+        30%{
+            transform: translateX(0vw);
+        }
+    
+        40%{
+            transform: translateX(-75vw);
+        }
+        65%{
+            transform: translateX(-75vw);
+        }
+    
+        75%{
+            transform: translateX(-140vw);
+    
+        }
+        95%{
+            transform: translateX(-140vw);
+    
+        }
+    
+        100%{
+            transform: translateX(0vw);
+    
+        }
+    }
+    
+
+    @-webkit-keyframes scroll {
+        0% {
+            -webkit-transform: translateX(0vw);
+        }
+        30% {
+            -webkit-transform: translateX(0vw);
+        }
+        40% {
+            -webkit-transform: translateX(-75vw);
+        }
+        65% {
+            -webkit-transform: translateX(-75vw);
+        }
+        75% {
+            -webkit-transform: translateX(-145vw);
+        }
+        95% {
+            -webkit-transform: translateX(-145vw);
+        }
+        100% {
+            -webkit-transform: translateX(0vw);
+        }
     }
 
     .rotateAnim{
@@ -347,37 +399,43 @@ overflow-x:hidden
         }
     }
         
-    @keyframes scroll {
-    0%{
-        transform: translateX(0vw);
 
-    }
-    30%{
-        transform: translateX(0vw);
+
+    .scroll2Anim{
+        animation: scroll2 8s infinite;
+        /* animation-direction:initial; */
     }
 
-    40%{
-        transform: translateX(-75vw);
+    @keyframes scroll2 {
+        0%{
+            transform: translateX(0vw);
+    
+        }
+        30%{
+            transform: translateX(0vw);
+        }
+    
+        40%{
+            transform: translateX(-99vw);
+        }
+        65%{
+            transform: translateX(-99vw);
+        }
+    
+        75%{
+            transform: translateX(-200vw);
+    
+        }
+        97%{
+            transform: translateX(-200vw);
+    
+        }
+    
+        100%{
+            transform: translateX(0vw);
+    
+        }
     }
-    65%{
-        transform: translateX(-75vw);
-    }
-
-    75%{
-        transform: translateX(-140vw);
-
-    }
-    95%{
-        transform: translateX(-140vw);
-
-    }
-
-    100%{
-        transform: translateX(0vw);
-
-    }
-}
-
 
     @keyframes slideBoth {
 
@@ -437,45 +495,6 @@ overflow-x:hidden
         }
     }
 
-
-
-
-
-    .scroll2Anim{
-        animation: scroll2 8s infinite;
-        /* animation-direction:initial; */
-    }
-
-    @keyframes scroll2 {
-        0%{
-            transform: translateX(0vw);
-    
-        }
-        30%{
-            transform: translateX(0vw);
-        }
-    
-        40%{
-            transform: translateX(-99vw);
-        }
-        65%{
-            transform: translateX(-99vw);
-        }
-    
-        75%{
-            transform: translateX(-200vw);
-    
-        }
-        97%{
-            transform: translateX(-200vw);
-    
-        }
-    
-        100%{
-            transform: translateX(0vw);
-    
-        }
-    }
 
 
     .ingredientesAnim img{
