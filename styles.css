@@ -255,19 +255,19 @@ overflow-x:hidden
         display: flex; 
         justify-content: space-between;
         overflow-x: hidden;
-        /* border: solid; */
+        border: solid red;
         color: black;
         font-family: Allura;
         font-size: 7vw;
     }
 
-    /* .subHeadTitles::-webkit-scrollbar {
-        width: 0;  /* This will hide the scrollbar */
-        
+  
 
     .subHeadTitles h1 {
-        /* border: solid; */
+        border: solid;
         margin: 0 15vw; 
+        position: relative;
+
     }
 
     .animHeadProducts{
@@ -292,7 +292,6 @@ overflow-x:hidden
     
     .animHeadProducts .tostadasAnim img{
         position: relative;
-        width: 60vw;
     
         z-index: 10;
         margin: 0 20vw;
