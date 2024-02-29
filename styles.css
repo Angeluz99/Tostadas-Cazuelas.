@@ -38,7 +38,7 @@ overflow-x:hidden
         10% {
       background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 19%, rgba(0, 0, 0, 0.558) 35%, rgba(0, 0, 0, 0.837) 43%);
         }
-        20% {
+        24% {
           background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 45%,  rgba(0, 0, 0, 0.558) 58%, rgba(0, 0, 0, 0.855) 69%);
         }
         88%{
@@ -259,17 +259,58 @@ overflow-x:hidden
         color: black;
         font-family: Allura;
         font-size: 7vw;
-        /*font-size: 3.5rem; for computer screen*/
     }
 
-    .subHeadTitles::-webkit-scrollbar {
+    /* .subHeadTitles::-webkit-scrollbar {
         width: 0;  /* This will hide the scrollbar */
-        }
+        
 
     .subHeadTitles h1 {
         /* border: solid; */
-        margin: 0 15vw; /* Remove default margins to avoid unwanted spacing */
+        margin: 0 15vw; 
     }
+
+    .animHeadProducts{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .animHeadProducts img{
+        width: 60vw;
+        }
+    
+    .tostadasAnim{
+        
+        width: 100%; /* Set width to 100% to make it as wide as its container */
+        white-space: nowrap; /* Prevent line breaks */
+        display: flex; 
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+    
+
+    
+    .animHeadProducts .tostadasAnim img{
+        position: relative;
+        width: 60vw;
+    
+        z-index: 10;
+        margin: 0 20vw;
+        padding: 0;
+    }
+    
+    
+    .mantel{
+        /* position: relative; */
+        translate: 5vw -50vw ;
+        z-index: 0;
+    }
+    
+    .slideBothAnim{
+        animation: slideBoth 8s infinite;
+        /* border: solid; */
+    }
+    
 
     .scrollAnim{
         animation: scroll 8s infinite;
@@ -338,26 +379,6 @@ overflow-x:hidden
     }
 }
 
-.animHeadProducts{
-    margin: 0;
-    padding: 0;
-}
-
-.animHeadProducts img{
-    width: 60vw;
-    }
-
-
-    .mantel{
-        /* position: relative; */
-        translate: 5vw -50vw ;
-        z-index: 0;
-    }
-
-    .slideBothAnim{
-        animation: slideBoth 8s infinite;
-        /* border: solid; */
-    }
 
     @keyframes slideBoth {
 
@@ -418,31 +439,8 @@ overflow-x:hidden
     }
 
 
-     .tostadasAnim{
-        
-        width: 100%; /* Set width to 100% to make it as wide as its container */
-        white-space: nowrap; /* Prevent line breaks */
-        display: flex; 
-        justify-content: space-between;
-        overflow-x: hidden;
-    }
 
-    .animHeadProducts span::-webkit-scrollbar {
-        width: 0;  /* This will hide the scrollbar */
-        }
 
-    .animHeadProducts .tostadasAnim img{
-        position: relative;
-        width: 60vw;
-
-        z-index: 10;
-        margin: 0 20vw;
-        padding: 0;
-    }
-     /* .tostadaCevichera{
-        margin-left: -11vw ;
-
-    }  */
 
     .scroll2Anim{
         animation: scroll2 8s infinite;
