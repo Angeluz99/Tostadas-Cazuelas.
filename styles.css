@@ -787,8 +787,11 @@ overflow-x:hidden
 
 /* iphon12 */
 @media only screen and (min-width: 389px) {
+    .subHeadTitles {
+        border: solid #66c961;
+    }
     .subHeadTitles h1{
-        margin: 0 3.5rem ; 
+        margin: 0 3.3rem ; 
         border: solid #66c961;
 
 
