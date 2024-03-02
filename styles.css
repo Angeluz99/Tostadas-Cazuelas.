@@ -354,10 +354,10 @@ overflow-x:hidden
             -webkit-transform: translateX(-75vw);
         }
         75% {
-            -webkit-transform: translateX(-145vw);
+            -webkit-transform: translateX(-140vw);
         }
         95% {
-            -webkit-transform: translateX(-145vw);
+            -webkit-transform: translateX(-140vw);
         }
         100% {
             -webkit-transform: translateX(0vw);
@@ -783,6 +783,7 @@ overflow-x:hidden
         margin: 0 3.5rem ; 
 
     }
+}
 
 
 /* iphon14Max */
