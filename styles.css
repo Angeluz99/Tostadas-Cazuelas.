@@ -797,6 +797,18 @@ overflow-x:hidden
 
     }
 
+
+
+@media only screen and (min-width: 400px) {
+
+    .subHeadTitles {
+        border: solid rgb(239, 251, 0);
+    }
+    .subHeadTitles h1{
+        border: solid rgb(239, 251, 0);
+
+
+    }
     @keyframes scroll {
         0%{
             transform: translateX(0vw);
@@ -828,13 +840,6 @@ overflow-x:hidden
         }
     }
 }
-
-@media only screen and (min-width: 400px) {
-    .subHeadTitles h1{
-        border: solid rgb(239, 251, 0);
-
-
-    }
 }
 
 /* iphon14Max */
