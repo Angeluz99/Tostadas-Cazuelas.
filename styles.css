@@ -255,7 +255,7 @@ overflow-x:hidden
         display: flex; 
         /* justify-content: space-between; */
         overflow-x: hidden;
-        border: solid rgb(255, 0, 123);
+        border: solid rgb(0, 0, 0);
         font-family: Allura;
         font-size: 7vw;
     }
@@ -264,6 +264,8 @@ overflow-x:hidden
         margin: 0 3.3rem; 
         position: relative;
         padding: 0;
+        border: solid rgb(208, 101, 8);
+
 
     }
 
@@ -340,7 +342,7 @@ overflow-x:hidden
     }
     
 
-    @-webkit-keyframes scroll {
+    /* @-webkit-keyframes scroll {
         0% {
             -webkit-transform: translateX(0vw);
         }
@@ -362,7 +364,7 @@ overflow-x:hidden
         100% {
             -webkit-transform: translateX(0vw);
         }
-    }
+    } */
 
     .rotateAnim{
         animation: rotate 8s infinite ;
@@ -775,14 +777,64 @@ overflow-x:hidden
     .allProductsHead {
         max-height: 104vw;
     }
+
+    .subHeadTitles h1{
+        border: solid rgb(97, 107, 201);
+
+
+    }
 }
 
 /* iphon12 */
 @media only screen and (min-width: 389px) {
     .subHeadTitles h1{
         margin: 0 3.5rem ; 
+        border: solid #66c961;
+
 
     }
+}
+
+/*my  galaxy note 10 is 450 px aprox*/
+@media only screen and (min-width: 445px) {
+    .subHeadTitles h1{
+        margin: 0 3.7rem ; 
+        border: solid #f5a8a8;
+
+    }
+
+    @keyframes scroll {
+        0%{
+            transform: translateX(0vw);
+    
+        }
+        30%{
+            transform: translateX(0vw);
+        }
+    
+        40%{
+            transform: translateX(-70vw);
+        }
+        65%{
+            transform: translateX(-70vw);
+        }
+    
+        75%{
+            transform: translateX(-138vw);
+    
+        }
+        95%{
+            transform: translateX(-138vw);
+    
+        }
+    
+        100%{
+            transform: translateX(0vw);
+    
+        }
+    }
+
+    
 }
 
 
