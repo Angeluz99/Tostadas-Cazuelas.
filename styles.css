@@ -253,15 +253,15 @@ overflow-x:hidden
         width: 100%; /* Set width to 100% to make it as wide as its container */
         white-space: nowrap; /* Prevent line breaks */
         display: flex; 
-        justify-content: space-between;
+        /* justify-content: space-between; */
         overflow-x: hidden;
-        border: solid red;
+        border: solid rgb(0, 68, 255);
         font-family: Allura;
         font-size: 7vw;
     }
     .subHeadTitles h1 {
         border: solid;
-        margin: 0 15vw; 
+        margin: 0 3.375rem; 
         position: relative;
         padding: 0;
 
@@ -289,11 +289,7 @@ overflow-x:hidden
         margin: 0 20vw;
         padding: 0;
     }
-    .faceBar{
-        max-height: 10vw;
-        background-color: #0056b3;
-        z-index: 5;
-    }
+
     
     .mantel{
         /* position: relative; */
@@ -783,7 +779,13 @@ overflow-x:hidden
 /* iphon14Max */
 @media only screen and (min-width: 429px) {
     .allProductsHead {
-        max-height: 98vw;
+        max-height: 95vw;
+    }
+
+    .subHeadTitles h1{
+        margin: 0 3.8rem ; 
+        /* margin-left: 8rem; */
+
     }
 
 
@@ -819,6 +821,12 @@ overflow-x:hidden
         display: flex;
         justify-content: space-between;
         margin-top: -20vw;            
+    }
+
+    .subHeadTitles h1{
+        margin: 0 7rem ; 
+        /* margin-left: 8rem; */
+
     }
 
     .tostadasProductWrapper{
