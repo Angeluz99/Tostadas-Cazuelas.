@@ -826,8 +826,13 @@ overflow-x:hidden
     }
 }
 
+@media only screen and (min-width: 400px) {
+    .subHeadTitles h1{
+        border: solid rgb(239, 251, 0);
 
 
+    }
+}
 
 /* iphon14Max */
 @media only screen and (min-width: 429px) {
