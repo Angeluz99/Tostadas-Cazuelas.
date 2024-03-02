@@ -9,6 +9,8 @@ overflow-x:hidden
     body {
         margin: 0;
         padding: 0;
+        height: 100vh;
+        height: 100svh;
         font-family: Montserrat, sans-serif;
         font-weight: 800;
         box-sizing: border-box;
@@ -1175,6 +1177,19 @@ overflow-x:hidden
     }
     .subHeadTitles h1{
         border: solid rgb(239, 251, 0);
+
+
+    }
+ 
+}
+
+@media only screen and (min-width: 407px) {
+
+    .subHeadTitles {
+        border: solid rgb(252, 82, 218);
+    }
+    .subHeadTitles h1{
+        border: solid rgb(252, 82, 218);
 
 
     }
