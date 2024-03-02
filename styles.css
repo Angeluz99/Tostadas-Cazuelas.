@@ -793,15 +793,6 @@ overflow-x:hidden
 
 
     }
-}
-
-/*my  galaxy note 10 is 450 px aprox*/
-@media only screen and (min-width: 445px) {
-    .subHeadTitles h1{
-        margin: 0 3.7rem ; 
-        border: solid #f5a8a8;
-
-    }
 
     @keyframes scroll {
         0%{
@@ -833,24 +824,43 @@ overflow-x:hidden
     
         }
     }
-
-    
 }
+
+
 
 
 /* iphon14Max */
 @media only screen and (min-width: 429px) {
     .allProductsHead {
         max-height: 95vw;
+        border: solid #ffffff;
+
+        
     }
 
     .subHeadTitles h1{
         margin: 0 3.8rem ; 
+        border: solid #ffffff;
+
         /* margin-left: 8rem; */
 
     }
 
 
+}
+
+
+/*my  galaxy note 10 is 450 px aprox*/
+@media only screen and (min-width: 445px) {
+    .subHeadTitles h1{
+        margin: 0 3.7rem ; 
+        border: solid #f5a8a8;
+
+    }
+
+
+
+    
 }
 /* ipadmini */
 @media only screen and (min-width: 767px) {
