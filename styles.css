@@ -255,13 +255,13 @@ overflow-x:hidden
         display: flex; 
         /* justify-content: space-between; */
         overflow-x: hidden;
-        border: solid rgb(0, 68, 255);
+        border: solid rgb(255, 0, 123);
         font-family: Allura;
         font-size: 7vw;
     }
     .subHeadTitles h1 {
         border: solid;
-        margin: 0 3.375rem; 
+        margin: 0 3.3rem; 
         position: relative;
         padding: 0;
 
@@ -776,6 +776,15 @@ overflow-x:hidden
         max-height: 104vw;
     }
 }
+
+/* iphon12 */
+@media only screen and (min-width: 389px) {
+    .subHeadTitles h1{
+        margin: 0 3.5rem ; 
+
+    }
+
+
 /* iphon14Max */
 @media only screen and (min-width: 429px) {
     .allProductsHead {
