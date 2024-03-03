@@ -342,6 +342,11 @@ overflow-x:hidden
     
         }
 
+        25%{
+            transform: translateX(-2vw);
+        }
+    
+
         30%{
             transform: translateX(-5vw);
         }
