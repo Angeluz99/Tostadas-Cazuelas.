@@ -330,20 +330,19 @@ overflow-x:hidden
     
 
     .scrollAnim{
-        animation: scroll 8s infinite ease-out;
-        -webkit-animation: scroll 8s infinite; /* Safari 4.0 - 8.0 */
+        animation: scroll 8s infinite ease-out both;
     }
 
 
 
     @keyframes scroll {
         0%{
-            transform: translateX(6vw);
+            transform: translateX(2vw);
     
         }
 
         25%{
-            transform: translateX(-2vw);
+            transform: translateX(0vw);
         }
     
 
@@ -360,11 +359,11 @@ overflow-x:hidden
         }
 
         90%{
-            transform: translateX(-144vw);
+            transform: translateX(-140vw);
         }
 
         95%{
-            transform: translateX(-147vw);
+            transform: translateX(-145vw);
     
         }
     
@@ -377,46 +376,20 @@ overflow-x:hidden
 
 
     .rotateAnim{
-        -webkit-animation: rotate 8s infinite ;
                 animation: rotate 8s infinite ;
-        -webkit-animation-fill-mode:none;
-                animation-fill-mode:none;
+                animation-fill-mode:both;
 
 
     }
 
-    @-webkit-keyframes rotate {
-        20%{
-            transform: rotateX(0deg);
-        }
-        25%{
-            transform: rotateX(0deg);
-        }
-        60%{
-            transform: rotateX(180deg);
 
-        }
-        75%{
-            transform: rotateX(360deg);
-
-        }
-        95%{
-            transform: rotateX(360deg);
-        }
-        
-        100%{
-            transform: rotateX(90deg);
-        }
-    }
 
     @keyframes rotate {
-        20%{
-            transform: rotateX(0deg);
-        }
+ 
         25%{
             transform: rotateX(0deg);
         }
-        60%{
+        65%{
             transform: rotateX(180deg);
 
         }
@@ -429,7 +402,7 @@ overflow-x:hidden
         }
         
         100%{
-            transform: rotateX(90deg);
+            transform: rotateX(0deg);
         }
     }
         
@@ -1104,6 +1077,10 @@ overflow-x:hidden
 /* iphon12 */
 @media only screen and (min-width: 389px) {
 
+    .allProductsHead {
+        max-height: 98vw;
+    }
+
     .subHeadTitles h1{
         margin: 0 15vw ; 
 
@@ -1119,6 +1096,10 @@ overflow-x:hidden
 
 /*iphone xr*/
 @media only screen and (min-width: 414px) {
+
+    .allProductsHead {
+        max-height: 95vw;
+    }
 
 
     .subHeadTitles h1{
