@@ -33,30 +33,10 @@ overflow-x:hidden
         align-items: center;
         justify-content: space-around;
         background-color: rgba(0, 0, 0, 0.523);
-        -webkit-animation: highlight auto linear;
-                animation: highlight auto linear;
+        animation: highlight auto linear;
         animation-timeline: scroll(root);
     }
 
-    @-webkit-keyframes highlight{
-        10% {
-      background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 19%, rgba(0, 0, 0, 0.558) 35%, rgba(0, 0, 0, 0.837) 43%);
-        }
-        24% {
-          background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 45%,  rgba(0, 0, 0, 0.558) 58%, rgba(0, 0, 0, 0.855) 69%);
-        }
-        88%{
-            background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 45%,  rgba(0, 0, 0, 0.558) 58%, rgba(0, 0, 0, 0.855) 69%);
-        }
-        89%{
-          background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 74%,  rgba(0, 0, 0, 0.558) 88%, rgba(0, 0, 0, 0.855) 95%);
-        }
-        100%{
-          background: linear-gradient(81deg, rgba(0, 0, 0, 0.9) 74%,  rgba(0, 0, 0, 0.558) 88%, rgba(0, 0, 0, 0.855) 95%);
-      
-        }
-      
-      }
 
     @keyframes highlight{
         10% {
@@ -124,7 +104,7 @@ overflow-x:hidden
         height: 100%;
         /* background: rgba(0, 0, 0, 0.1);  */
     }
-    #headSection:before {
+    #sabor_calidad_servicio:before {
         background-image: url('imagesCazuelas/backg1.png'); 
         background-position: center;
         background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
@@ -137,7 +117,7 @@ overflow-x:hidden
     
 
     
-    #headSection {
+    #sabor_calidad_servicio {
         /* background-image: url('imagesCazuelas/backg1.png'); */
         background-position: center;
         color: white;
@@ -151,7 +131,7 @@ overflow-x:hidden
 
  
 
-    #aboutSection{
+    #nuestra_empresa{
         height: 25rem;
 
     }
@@ -194,7 +174,7 @@ overflow-x:hidden
     }
 
 
-    #aboutSection {
+    #nuestra_empresa {
         color: rgb(255, 255, 255);
         z-index: 2; /* Ensures about section is above background */
         height: -webkit-fit-content ;
@@ -409,41 +389,10 @@ overflow-x:hidden
 
 
     .scroll2Anim{
-        -webkit-animation: scroll2 8s infinite;
                 animation: scroll2 8s infinite;
         /* animation-direction:initial; */
     }
 
-    @-webkit-keyframes scroll2 {
-        0%{
-            transform: translateX(0vw);
-    
-        }
-        30%{
-            transform: translateX(0vw);
-        }
-    
-        40%{
-            transform: translateX(-99vw);
-        }
-        65%{
-            transform: translateX(-99vw);
-        }
-    
-        75%{
-            transform: translateX(-200vw);
-    
-        }
-        97%{
-            transform: translateX(-200vw);
-    
-        }
-    
-        100%{
-            transform: translateX(0vw);
-    
-        }
-    }
 
     @keyframes scroll2 {
         0%{
@@ -476,70 +425,6 @@ overflow-x:hidden
         }
     }
 
-    @-webkit-keyframes slideBoth {
-
-        0%{
-            transform: translateX(-50vw);
-            opacity: 0;
-        }
-        3%{
-            transform: translateX(0vw);
-            opacity: 1;
-        }
-        27%{
-            transform: translateX(1vw);
-            opacity: 1;
-            -webkit-filter: hue-rotate(0deg);
-                    filter: hue-rotate(0deg);
-
-        }
-        30%{
-            transform: translateX(-50vw);
-            opacity: 0;
-
-
-        }
-        32%{
-            transform: translateX(-1vw);
-            opacity: 1;
-            -webkit-filter: saturate(2);
-                    filter: saturate(2);
-            -webkit-filter: hue-rotate(180deg);
-                    filter: hue-rotate(180deg);
-        }
-        60%{
-            transform: translateX(-0vw);
-            opacity: 1;
-            -webkit-filter: saturate(2);
-                    filter: saturate(2);
-            -webkit-filter: hue-rotate(180deg);
-                    filter: hue-rotate(180deg);
-        }
-
-
-        63%{
-            transform: translateX(-50vw);
-            opacity: 0;
-            -webkit-filter: hue-rotate(90deg);
-                    filter: hue-rotate(90deg);
-
-
-        }   
-        65%{
-            transform: translateX(-5vw);
-            opacity: 1;
-        }
-        95%{
-            transform: translateX(-0vw);
-            opacity: 1;
-            -webkit-filter: hue-rotate(90deg);
-                    filter: hue-rotate(90deg);
-        }
-        100%{
-            transform: translateX(-50vw);
-            opacity: 1;
-        }
-    }
 
     @keyframes slideBoth {
 
@@ -554,7 +439,6 @@ overflow-x:hidden
         27%{
             transform: translateX(1vw);
             opacity: 1;
-            -webkit-filter: hue-rotate(0deg);
                     filter: hue-rotate(0deg);
 
         }
@@ -567,17 +451,13 @@ overflow-x:hidden
         32%{
             transform: translateX(-1vw);
             opacity: 1;
-            -webkit-filter: saturate(2);
                     filter: saturate(2);
-            -webkit-filter: hue-rotate(180deg);
                     filter: hue-rotate(180deg);
         }
         60%{
             transform: translateX(-0vw);
             opacity: 1;
-            -webkit-filter: saturate(2);
                     filter: saturate(2);
-            -webkit-filter: hue-rotate(180deg);
                     filter: hue-rotate(180deg);
         }
 
@@ -585,7 +465,6 @@ overflow-x:hidden
         63%{
             transform: translateX(-50vw);
             opacity: 0;
-            -webkit-filter: hue-rotate(90deg);
                     filter: hue-rotate(90deg);
 
 
@@ -597,7 +476,6 @@ overflow-x:hidden
         95%{
             transform: translateX(-0vw);
             opacity: 1;
-            -webkit-filter: hue-rotate(90deg);
                     filter: hue-rotate(90deg);
         }
         100%{
@@ -621,95 +499,36 @@ overflow-x:hidden
     }  */
 
     .setDown1Anim{
-        -webkit-animation: setDown1 8s infinite;
                 animation: setDown1 8s infinite;
-        -webkit-animation-fill-mode: both;
                 animation-fill-mode: both;
 
 
     }
     
-    @-webkit-keyframes setDown1 {
-        0%{
-            -webkit-filter: opacity(0);
-                    filter: opacity(0);
-        }
 
-        8%{
-            -webkit-filter: drop-shadow(0px 0px 0px #222);
-                    filter: drop-shadow(0px 0px 0px #222);
-        }
-
-        9%{
-            -webkit-filter: drop-shadow(3px 3px 3px #222);
-                    filter: drop-shadow(3px 3px 3px #222);
-        }
-        10%{
-            -webkit-filter: opacity(1);
-                    filter: opacity(1);
-            translate:0vw 20vw;
-            -webkit-filter: drop-shadow(3px 3px 3px #222);
-                    filter: drop-shadow(3px 3px 3px #222);
-
-
-        }
-
-        27%{
-            -webkit-filter: opacity(1);
-                    filter: opacity(1);
-            -webkit-filter: drop-shadow(3px 3px 3px #222);
-                    filter: drop-shadow(3px 3px 3px #222);
-            translate:0vw 20vw;
-
-
-        }
-        30%{
-            translate:0vw -5vw;
-
-            -webkit-filter: opacity(0);
-
-                    filter: opacity(0);
-
-
-
-        }
-        100%{
-            -webkit-filter: opacity(0);
-                    filter: opacity(0);
-            /* filter: drop-shadow(0px 0px 0px #222); */
-
-        }
-    }
     
     @keyframes setDown1 {
         0%{
-            -webkit-filter: opacity(0);
                     filter: opacity(0);
         }
 
         8%{
-            -webkit-filter: drop-shadow(0px 0px 0px #222);
                     filter: drop-shadow(0px 0px 0px #222);
         }
 
         9%{
-            -webkit-filter: drop-shadow(3px 3px 3px #222);
                     filter: drop-shadow(3px 3px 3px #222);
         }
         10%{
-            -webkit-filter: opacity(1);
                     filter: opacity(1);
             translate:0vw 20vw;
-            -webkit-filter: drop-shadow(3px 3px 3px #222);
                     filter: drop-shadow(3px 3px 3px #222);
 
 
         }
 
         27%{
-            -webkit-filter: opacity(1);
                     filter: opacity(1);
-            -webkit-filter: drop-shadow(3px 3px 3px #222);
                     filter: drop-shadow(3px 3px 3px #222);
             translate:0vw 20vw;
 
@@ -717,16 +536,12 @@ overflow-x:hidden
         }
         30%{
             translate:0vw -5vw;
-
-            -webkit-filter: opacity(0);
-
                     filter: opacity(0);
 
 
 
         }
         100%{
-            -webkit-filter: opacity(0);
                     filter: opacity(0);
             /* filter: drop-shadow(0px 0px 0px #222); */
 
@@ -734,196 +549,86 @@ overflow-x:hidden
     }
 
 .setDown2Anim{
-    -webkit-animation: setDown2 8s infinite;
             animation: setDown2 8s infinite;
-    -webkit-animation-delay: 2.8s;
             animation-delay: 2.8s;
-    -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
 }
 
-@-webkit-keyframes setDown2 {
-    0%{
-        -webkit-filter: opacity(0);
-                filter: opacity(0);
-    }
-    8%{
-        -webkit-filter: drop-shadow(0px 0px 0px #222);
-                filter: drop-shadow(0px 0px 0px #222);
-    }
-
-    9%{
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-                filter: drop-shadow(3px 3px 3px #222);
-    }
-    10%{
-        -webkit-filter: opacity(1);
-                filter: opacity(1);
-        translate:0vw 15vw;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-                filter: drop-shadow(3px 3px 3px #222);
-
-    }
-    27%{
-        -webkit-filter: opacity(1);
-                filter: opacity(1);
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-                filter: drop-shadow(3px 3px 3px #222);
-        translate:0vw 15vw;
-
-
-    }
-    30%{
-        -webkit-filter: opacity(0);
-                filter: opacity(0);
-        translate:0vw -5vw;
-
-    }
-    100%{
-        -webkit-filter: opacity(0);
-                filter: opacity(0);
-    }
-}
 
 @keyframes setDown2 {
     0%{
-        -webkit-filter: opacity(0);
                 filter: opacity(0);
     }
     8%{
-        -webkit-filter: drop-shadow(0px 0px 0px #222);
                 filter: drop-shadow(0px 0px 0px #222);
     }
 
     9%{
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
                 filter: drop-shadow(3px 3px 3px #222);
     }
     10%{
-        -webkit-filter: opacity(1);
                 filter: opacity(1);
         translate:0vw 15vw;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
                 filter: drop-shadow(3px 3px 3px #222);
 
     }
     27%{
-        -webkit-filter: opacity(1);
                 filter: opacity(1);
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
                 filter: drop-shadow(3px 3px 3px #222);
         translate:0vw 15vw;
 
 
     }
     30%{
-        -webkit-filter: opacity(0);
                 filter: opacity(0);
         translate:0vw -5vw;
 
     }
     100%{
-        -webkit-filter: opacity(0);
                 filter: opacity(0);
     }
 }
 
 .setDown3Anim{
-    -webkit-animation: setDown3 8s infinite;
             animation: setDown3 8s infinite;  
-    -webkit-animation-delay: 5.5s;  
             animation-delay: 5.5s;
-    -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
 
 }
 
-@-webkit-keyframes setDown3 {
-    0%{
-        -webkit-filter: opacity(0);
-                filter: opacity(0);
-    }
-
-    8%{
-        -webkit-filter: drop-shadow(0px 0px 0px #222);
-                filter: drop-shadow(0px 0px 0px #222);
-    }
-
-    9%{
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-                filter: drop-shadow(3px 3px 3px #222);
-    }
-    10%{
-        -webkit-filter: opacity(1);
-                filter: opacity(1);
-        translate:0vw 12vw;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-                filter: drop-shadow(3px 3px 3px #222);
-
-    }
-    27%{
-        -webkit-filter: opacity(1);
-                filter: opacity(1);
-        translate:0vw 12vw;
-
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
-
-                filter: drop-shadow(3px 3px 3px #222);
-
-    }
-    30%{
-        -webkit-filter: opacity(0);
-                filter: opacity(0);
-        translate:0vw -5vw;
-
-    }
-    100%{
-        -webkit-filter: opacity(0);
-                filter: opacity(0);
-    }
-}
 
 @keyframes setDown3 {
     0%{
-        -webkit-filter: opacity(0);
                 filter: opacity(0);
     }
 
     8%{
-        -webkit-filter: drop-shadow(0px 0px 0px #222);
                 filter: drop-shadow(0px 0px 0px #222);
     }
 
     9%{
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
                 filter: drop-shadow(3px 3px 3px #222);
     }
     10%{
-        -webkit-filter: opacity(1);
                 filter: opacity(1);
         translate:0vw 12vw;
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
                 filter: drop-shadow(3px 3px 3px #222);
 
     }
     27%{
-        -webkit-filter: opacity(1);
                 filter: opacity(1);
         translate:0vw 12vw;
 
-        -webkit-filter: drop-shadow(3px 3px 3px #222);
 
                 filter: drop-shadow(3px 3px 3px #222);
 
     }
     30%{
-        -webkit-filter: opacity(0);
                 filter: opacity(0);
         translate:0vw -5vw;
 
     }
     100%{
-        -webkit-filter: opacity(0);
                 filter: opacity(0);
     }
 }
@@ -963,7 +668,6 @@ overflow-x:hidden
    }
 
    .totoposSection img{
-    -webkit-filter: saturate(1.2);
             filter: saturate(1.2);
    }
 
@@ -975,6 +679,12 @@ overflow-x:hidden
 .productSection img{
     height: 50vw;
 
+}
+
+.productSection h4{
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -1053,7 +763,6 @@ overflow-x:hidden
     /* hover animations */
     .navBar a:hover{
         scale: 1.1;
-        -webkit-filter: drop-shadow(2px 2px 3px white);
                 filter: drop-shadow(2px 2px 3px white);
     }
 
@@ -1083,6 +792,9 @@ overflow-x:hidden
 
     .subHeadTitles h1{
         margin: 0 15vw ; 
+        font-size: 10vw;
+
+
 
 
     }
@@ -1204,39 +916,6 @@ overflow-x:hidden
        }
 
 
-    
-       @-webkit-keyframes scroll {
-        0%{
-            transform: translateX(0vw);
-    
-        }
-        30%{
-            transform: translateX(0vw);
-        }
-    
-        40%{
-            transform: translateX(-75vw);
-        }
-        65%{
-            transform: translateX(-75vw);
-        }
-    
-        75%{
-            transform: translateX(-145vw);
-    
-        }
-        95%{
-            transform: translateX(-145vw);
-    
-        }
-    
-        100%{
-            transform: translateX(0vw);
-    
-        }
-    }
-
-
 
     @keyframes scroll {
         0%{
@@ -1355,39 +1034,6 @@ overflow-x:hidden
             padding: 0;
         }
 
-
-            
-    @-webkit-keyframes scroll2 {
-        0%{
-            transform: translateX(0vw);
-    
-        }
-        30%{
-            transform: translateX(0vw);
-        }
-    
-        40%{
-            transform: translateX(-99vw);
-        }
-        65%{
-            transform: translateX(-99vw);
-        }
-    
-        75%{
-            transform: translateX(-200vw);
-    
-        }
-        95%{
-            transform: translateX(-200vw);
-    
-        }
-    
-        100%{
-            transform: translateX(0vw);
-    
-        }
-
-    }
 
 
             
