@@ -862,11 +862,6 @@ overflow-x:hidden
 
         
     }
-    /* .subHeadTitles h1{
-        margin: 0 15vw ; 
-
-    } */
-
 }
 
 
@@ -877,13 +872,10 @@ overflow-x:hidden
     html body{
         overflow-x:hidden 
         }
-
         
     .navBar a{
         font-size: 3vw;
     }
-
-
 
     .topHeadProducts{
         height: 25vw;
@@ -962,11 +954,6 @@ overflow-x:hidden
        }
 
 
-       .scrollAnim{
-        animation: scroll 8s infinite ease-in-out both;
-    }
-
-
 
     @keyframes scroll {
         0%{
@@ -978,10 +965,10 @@ overflow-x:hidden
         }
     
         40%{
-            transform: translateX(-75vw);
+            transform: translateX(-78vw);
         }
         65%{
-            transform: translateX(-75vw);
+            transform: translateX(-78vw);
         }
     
         75%{
@@ -1030,10 +1017,7 @@ overflow-x:hidden
     .allProductsHead {
         display: flex;
         flex-direction: row-reverse;
-        /* justify-content: space-between; */
         max-height: 35vw;
-        /* grid-template-columns: repeat(2, 1fr);
-        gap: 0px;  */
     } 
 
         .subHeadProducts{
@@ -1041,16 +1025,46 @@ overflow-x:hidden
         }
 
         .subHeadTitles{
-            transform: translateY(-4vw);          
+            transform: translateY(-4vw);    
+            display: flex;      
+            justify-content: space-between;
         }
 
         .subHeadTitles h1{
             font-size: 6.5vw;
-            margin-right: 40vw; 
-            margin-left: 7vw;
-            
-        }
+            margin: 0 10rem ; 
 
+        }
+        @keyframes scroll {
+            0%{
+                transform: translateX(-6vw);
+        
+            }
+            30%{
+                transform: translateX(-6vw);
+            }
+        
+            40%{
+                transform: translateX(-63vw);
+            }
+            65%{
+                transform: translateX(-63vw);
+            }
+        
+            75%{
+                transform: translateX(-110vw);
+        
+            }
+            95%{
+                transform: translateX(-110vw);
+        
+            }
+        
+            100%{
+                transform: translateX(0vw);
+        
+            }
+        }
 
 
 
