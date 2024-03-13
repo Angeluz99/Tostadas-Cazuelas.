@@ -122,14 +122,37 @@ overflow-x:hidden
         background-position: center;
         color: white;
         margin-bottom: 9vw;
-        /* filter: contrast(80%); */
-        /* filter: brightness(70%) */
-
-
 
     }
 
- 
+    .whatsapp-section {
+        position: fixed;
+        bottom: 40%;
+        right: 10px;
+        z-index: 1000; /* Ensure it's above other content */
+        padding: 0;
+      }
+
+      
+      .whatsapp-section a {
+        display: block;
+        box-shadow: inset 2px 1px 1px green;
+
+        padding: 2vw;
+        background-color: white;
+        color: green;
+
+        border-radius: 50%;
+        text-align: center;
+        transition: all .3s ease-out;
+        width: 6vw;
+        height: auto;
+      
+      }
+      
+      .whatsapp-section a i{
+        font-size: 5vw; 
+      }
 
     #nuestra_empresa{
         height: 25rem;
@@ -154,12 +177,8 @@ overflow-x:hidden
                 filter: brightness(60%)
     }
     #bodySection {
-    
         background-position: center;
-
         color: white;
-
-        
     }
 
     #bodySection .content h4{
@@ -181,7 +200,6 @@ overflow-x:hidden
         height: -moz-fit-content ;
         height: fit-content ;
 
-
     }
 
     #video-background {
@@ -200,8 +218,6 @@ overflow-x:hidden
     }
 
     .topHeadProducts{
-
-
         background-image: url(imagesCazuelas/imageProductsHead.jpg) ;
         background-position: center;
         background-size: cover;
@@ -215,8 +231,6 @@ overflow-x:hidden
         background-color: rgba(0, 0, 0, 0.578);
         display: inline-flex;
 
-        
-
     }
 
     .allProductsHead {
@@ -227,9 +241,6 @@ overflow-x:hidden
         background-repeat: no-repeat;
         max-height: 110vw;
         margin-bottom: 10vw;
-    
-        /* border: solid; */
-
     }
 
     .subHeadProducts{
@@ -243,33 +254,119 @@ overflow-x:hidden
 
     }
     .subHeadProducts h4{
-        /* border: solid; */
         margin-bottom: 0;
     }
 
     .splashes{
         display: flex;
         justify-content: space-between;
-        margin-top: -23vw;            
+        margin-top: -7vw;            
     }
 
 
     .subHeadTitles{
         width: 100%; /* Set width to 100% to make it as wide as its container */
-        white-space: nowrap; /* Prevent line breaks */
-        display: flex; 
-        /* justify-content: space-between; */
-        overflow-x: hidden;
         font-family: Allura;
         font-size: 7vw;
     }
     .subHeadTitles h1 {
-        margin: 0 15vw; 
-        position: relative;
+        margin: 0 0; 
+        position: absolute;
         padding: 0;
+        margin-left: 16vw;
+
+    }
+    .subHeadTitles h1:nth-child(1){
+        animation: blinking 8s infinite both;
+    }
 
 
+    .subHeadTitles h1:nth-child(2){
+        animation: blinking1 8s infinite both;
+        translate: 15% 0%;
+    }
 
+    .subHeadTitles h1:nth-child(3){
+        animation: blinking2 8s infinite both;
+        translate: 20% 0%;
+    }
+
+    @keyframes blinking {
+        0%{
+            opacity: 0;
+            scale: 1;
+        }
+        
+        10%{
+            opacity: 1;
+        }
+
+        30%{
+            opacity:1 ;
+            scale: 1.1;
+        }
+        33%{
+            opacity:0 ;
+            scale: .8;
+
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes blinking1 {
+        0%{
+            opacity: 0;
+            scale: 1;
+        }
+        37%{
+            opacity: 0;
+        }
+
+        40%{
+            opacity: 1;
+            scale: 1;
+
+        }
+
+        60%{
+            opacity: 1;
+            scale: 1.1;
+        }
+
+        70%{
+            opacity: 0;
+            scale: .8;
+        }
+    
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes blinking2 {
+        0%{
+            opacity: 0;
+            scale: 1;
+        }
+
+        70%{
+            opacity: 0;
+            scale: 1;
+        }
+
+        75%{
+            opacity: 1;
+            scale: 1.1;
+        }
+
+        95%{
+            opacity: 1;
+            scale: 1.1;
+        }
+        100%{
+            opacity: 0;
+            scale: .8;
+        }
     }
 
     .animHeadProducts{
@@ -303,57 +400,9 @@ overflow-x:hidden
     }
     
     .slideBothAnim{
-        -webkit-animation: slideBoth 8s infinite;
-                animation: slideBoth 8s infinite;
-        /* border: solid; */
+        animation: slideBoth 8s infinite;
     }
     
-
-    .scrollAnim{
-        animation: scroll 8s infinite ease-out both;
-    }
-
-
-
-    @keyframes scroll {
-        0%{
-            transform: translateX(2vw);
-    
-        }
-
-        25%{
-            transform: translateX(0vw);
-        }
-    
-
-        30%{
-            transform: translateX(-5vw);
-        }
-    
-        63%{
-            transform: translateX(-75vw);
-        }
-
-        68%{
-            transform: translateX(-80vw);
-        }
-
-        90%{
-            transform: translateX(-140vw);
-        }
-
-        95%{
-            transform: translateX(-145vw);
-    
-        }
-    
-        100%{
-            transform: translateX(5vw);
-    
-        }
-    }
-    
-
 
     .rotateAnim{
                 animation: rotate 8s infinite ;
@@ -368,21 +417,25 @@ overflow-x:hidden
  
         25%{
             transform: rotateX(0deg);
-        }
-        65%{
-            transform: rotateX(180deg);
 
         }
-        75%{
+        55%{
+            transform: rotateX(180deg);
+
+
+        }
+        80%{
             transform: rotateX(360deg);
 
         }
         95%{
             transform: rotateX(360deg);
+
         }
         
         100%{
             transform: rotateX(0deg);
+
         }
     }
         
@@ -485,7 +538,6 @@ overflow-x:hidden
     }
 
 
-
     .ingredientesAnim img{
         position: relative;
         margin: -15vw 0vw;
@@ -494,9 +546,6 @@ overflow-x:hidden
     }
 
 
-    /* .ingredientsDeshidratada{
-        translate: -5vw -5vw;
-    }  */
 
     .setDown1Anim{
                 animation: setDown1 8s infinite;
@@ -687,15 +736,12 @@ overflow-x:hidden
     padding: 0;
 }
 
-
     form {
         text-align: center;
         margin: 5rem 2rem;
         padding: 2rem 2rem;
         border-top: solid 1px #d75351;
     }
-
-
     
     .contactForm {
         text-align: center;
@@ -763,7 +809,15 @@ overflow-x:hidden
     /* hover animations */
     .navBar a:hover{
         scale: 1.1;
-                filter: drop-shadow(2px 2px 3px white);
+        filter: drop-shadow(2px 2px 3px white);
+    }
+
+    .whatsapp-section a:hover{
+        scale: 1.1;
+        background-color: green;
+        color: rgb(255, 255, 255);
+        box-shadow: 2px 1px 1px white;
+
     }
 
 
@@ -790,21 +844,7 @@ overflow-x:hidden
         max-height: 98vw;
     }
 
-    .subHeadTitles h1{
-        margin: 0 15vw ; 
-        font-size: 10vw;
-
-
-
-
-    }
-
 }
-
-
-
-
-
 
 /*iphone xr*/
 @media only screen and (min-width: 414px) {
@@ -812,14 +852,6 @@ overflow-x:hidden
     .allProductsHead {
         max-height: 95vw;
     }
-
-
-    .subHeadTitles h1{
-        margin: 0 14.5vw ; 
-
-
-    }
- 
 }
 
 
@@ -830,24 +862,15 @@ overflow-x:hidden
 
         
     }
-    .subHeadTitles h1{
+    /* .subHeadTitles h1{
         margin: 0 15vw ; 
 
-    }
+    } */
 
 }
 
 
-/*my  galaxy note 10 is 450 px aprox*/
-@media only screen and (min-width: 445px) {
 
-
-    .subHeadTitles h1{
-        margin: 0 14.5vw ;   /* we went back here*/
-    }
-
-    
-}
 /* ipadmini */
 @media only screen and (min-width: 767px) {
 
@@ -881,11 +904,34 @@ overflow-x:hidden
         margin-top: -20vw;            
     }
 
+    .subHeadTitles{
+        width: 100%; /* Set width to 100% to make it as wide as its container */
+        white-space: nowrap; /* Prevent line breaks */
+        display: flex; 
+        /* justify-content: space-between; */
+        overflow-x: hidden;
+        font-family: Allura;
+        font-size: 7vw;
+    }
+
+
     .subHeadTitles h1{
+        position: relative;
+        padding: 0;
         margin: 0 7rem ; 
-        /* margin-left: 8rem; */
+
 
     }
+
+     .subHeadTitles h1:nth-child(1){
+        animation: scroll 8s infinite ease-in-out both;
+    } 
+     .subHeadTitles h1:nth-child(2){
+        animation: scroll 8s infinite ease-in-out both;
+    } 
+     .subHeadTitles h1:nth-child(3){
+        animation: scroll 8s infinite ease-in-out both;
+    } 
 
     .tostadasProductWrapper{
         display: flex; /* Use flexbox to align items in a row */
@@ -914,6 +960,11 @@ overflow-x:hidden
   
         transform: translate( 20vw,  -35vw);
        }
+
+
+       .scrollAnim{
+        animation: scroll 8s infinite ease-in-out both;
+    }
 
 
 
@@ -946,6 +997,13 @@ overflow-x:hidden
             transform: translateX(0vw);
     
         }
+    }
+
+    .whatsapp-section a{
+        width: 3vw;
+    }
+    .whatsapp-section a i{
+        font-size: 3vw;
     }
 
 
