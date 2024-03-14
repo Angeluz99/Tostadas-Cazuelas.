@@ -105,7 +105,7 @@ overflow-x:hidden
         /* background: rgba(0, 0, 0, 0.1);  */
     }
     #sabor_calidad_servicio:before {
-        background-image: url('imagesCazuelas/backg1.png'); 
+        background-image: url('imagesCazuelas/backg1.webp'); 
         background-position: center;
         background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
 
@@ -168,7 +168,7 @@ overflow-x:hidden
     }
 
     #bodySection:before {
-        background-image: url('imagesCazuelas/backg2.png'); 
+        background-image: url('imagesCazuelas/backg2.webp'); 
         background-position: center;
         background-attachment: fixed; /* Ensures the background image remains fixed while scrolling */
 
