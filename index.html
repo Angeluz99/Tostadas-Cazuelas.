@@ -254,17 +254,25 @@
     }
 
     function adjustAnimation() {
-    var subtitles = document.querySelectorAll(".subtitle");
+    var subDeshidratada = document.getElementById("subtile1");
+    var subTradicional = document.getElementById("subtile2");
+    var subCevichera = document.getElementById("subtile3");
 
     if (isFacebookInAppBrowser()) {
-        subtitles.forEach(function(subtitle) {
-            subtitle.style.marginInline = "20vw";
-            subtitle.style.border = "1px solid black";
-        });
+
+        subDeshidratada.style.translate = "-5vw 0";
+        subDeshidratada.style.border = "1px solid black";
+
+        subTradicional.style.translate = "-5vw 0";
+        subTradicional.style.border = "1px solid red";
+
+        subCevichera.style.border = "1px solid green";
+        
     }
 }
-
     adjustAnimation()
+
+
     // Create a paragraph element with the browser information
     var browserParagraph = document.createElement("p");
     browserParagraph.textContent = "Versión para " + getCurrentBrowser();
