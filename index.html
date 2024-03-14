@@ -259,7 +259,9 @@
     var subCevichera = document.getElementById("subtitle3");
 
     if (isFacebookInAppBrowser() || userAgent.includes("Safari")) {
-        subDeshidratada.style.transform = "translateX(.5vw)";
+        
+        subDeshidratada.style.position = "relative";
+        subDeshidratada.style.transform = "translateX(-.5vw)";
         subDeshidratada.style.border = "1px solid green";
 
         subTradicional.style.position = "relative";
