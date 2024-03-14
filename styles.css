@@ -275,6 +275,7 @@ overflow-x:hidden
         padding: 0;
         margin-left: 16vw;
 
+
     }
     .subHeadTitles h1:nth-child(1){
         animation: blinking 8s infinite both;
