@@ -258,7 +258,7 @@
     var subTradicional = document.getElementById("subtitle2");
     var subCevichera = document.getElementById("subtitle3");
 
-    if (isFacebookInAppBrowser() || userAgent.includes("Safari")) {
+    if ((isFacebookInAppBrowser() || userAgent.includes("Safari")) && window.innerWidth < 768) {
 
         subDeshidratada.style.transform = "translateX(-2vw)";
         subDeshidratada.style.border = "1px solid grey";
