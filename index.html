@@ -253,16 +253,16 @@
         }
     }
 
-    function adjustAnimation(){
-        var subtitle = document.getElementsByClassName("subtitle") ;
+    function adjustAnimation() {
+    var subtitles = document.querySelectorAll(".subtitle");
 
-    
-        if (isFacebookInAppBrowser()) {
-            subtitle.style.marginInline = "20vw"
-            subtitle.style.border = "solid"
-                
-        }
+    if (isFacebookInAppBrowser()) {
+        subtitles.forEach(function(subtitle) {
+            subtitle.style.marginInline = "20vw";
+            subtitle.style.border = "1px solid black";
+        });
     }
+}
 
     adjustAnimation()
     // Create a paragraph element with the browser information
