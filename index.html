@@ -74,9 +74,9 @@
 
             <section class="content subHeadProducts" >
                 <span class="subHeadTitles ">
-                    <h1 class="subtitle1" >Deshidratada</h1>
-                    <h1 class="subtitle2" >Tradicional</h1>
-                    <h1 class="subtitle3">Cevichera</h1>
+                    <h1 id="subtitle1" >Deshidratada</h1>
+                    <h1 id="subtitle2" >Tradicional</h1>
+                    <h1 id="subtitle3">Cevichera</h1>
                 </span>
 
                 <section class="splashes rotateAnim">
@@ -254,15 +254,15 @@
     }
 
     function adjustAnimation() {
-    var subDeshidratada = document.getElementsByClassName("subtitle1")[0];
-    var subTradicional = document.getElementsByClassName("subtitle2")[0];
-    var subCevichera = document.getElementsByClassName("subtitle3")[0];
+    var subDeshidratada = document.getElementById("subtitle1");
+    var subTradicional = document.getElementById("subtitle2");
+    var subCevichera = document.getElementById("subtitle3");
 
     if (isFacebookInAppBrowser() || userAgent.includes("Safari")) {
-        subDeshidratada.style.marginLeft = "-5vw";
+        subDeshidratada.style.marginLeft = "-1vw";
         subDeshidratada.style.border = "1px solid black";
 
-        subTradicional.style.marginLeft = "-5vw";
+        subTradicional.style.marginLeft = "-1vw";
         subTradicional.style.border = "1px solid red";
 
         subCevichera.style.border = "1px solid green";
@@ -270,8 +270,6 @@
 }
 
 adjustAnimation();
-
-
     // Create a paragraph element with the browser information
     var browserParagraph = document.createElement("p");
     browserParagraph.textContent = "Versión for " + getCurrentBrowser();
