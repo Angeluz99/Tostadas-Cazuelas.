@@ -74,9 +74,9 @@
 
             <section class="content subHeadProducts" >
                 <span class="subHeadTitles ">
-                    <h1 >Deshidratada</h1>
-                    <h1 >Tradicional</h1>
-                    <h1 >Cevichera</h1>
+                    <h1 class="subtitle" >Deshidratada</h1>
+                    <h1 class="subtitle" >Tradicional</h1>
+                    <h1 class="subtitle">Cevichera</h1>
                 </span>
 
                 <section class="splashes rotateAnim">
@@ -253,6 +253,16 @@
         }
     }
 
+    function adjustAnimation(){
+        var subtitle = document.getElementsByClassName("subtitle") ;
+
+    
+        if (isFacebookInAppBrowser()) {
+            subtitle.style.marginInline = "20vw"
+            subtitle.style.border = "solid"
+                
+        }
+    }
     // Create a paragraph element with the browser information
     var browserParagraph = document.createElement("p");
     browserParagraph.textContent = "Versión para " + getCurrentBrowser();
