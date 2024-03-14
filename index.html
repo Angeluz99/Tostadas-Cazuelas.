@@ -223,13 +223,43 @@
         <a href="https://wa.me/523317237567/?text=Quisiera%20saber%20más%20de%20sus%20productos" target="_blank" rel="noopener noreferrer">
             <h4> Whatsapp 33 17 23 75 67</h4>
         </a>
-        <span>
-            <a href="mailto:angelgldiaz@gmail.com"><h5>Página creada por angelgldiaz@gmail.com</h5></a>        
-            
+
+        <span id="browserInfo">
+            <a href="mailto:angelgldiaz@gmail.com"><h5>Página creada por angelgldiaz@gmail.com</h5></a>
         </span>
     </footer>
 
+<script>
+    // Get the user agent string
+    var userAgent = navigator.userAgent;
 
+    // Function to detect if the Facebook in-app browser is being used
+    function isFacebookInAppBrowser() {
+        return userAgent.includes("FBAN") || userAgent.includes("FBAV") || userAgent.includes("FBIOS");
+    }
+
+    // Function to detect the current browser
+    function getCurrentBrowser() {
+        if (isFacebookInAppBrowser()) {
+            return "Facebook in-app browser";
+        } else if (userAgent.includes("Chrome")) {
+            return "Google Chrome";
+        } else if (userAgent.includes("Safari")) {
+            return "Safari";
+        } else if (userAgent.includes("Firefox")) {
+            return "Firefox";
+        } else {
+            return "undetectable browser";
+        }
+    }
+
+    // Create a paragraph element with the browser information
+    var browserParagraph = document.createElement("p");
+    browserParagraph.textContent = "Versión para " + getCurrentBrowser();
+
+    // Insert the paragraph into the span element
+    document.getElementById("browserInfo").appendChild(browserParagraph);
+</script>
 
 </body>
 </html>
